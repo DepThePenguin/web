@@ -1,0 +1,48 @@
+a:link
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #1478AC;
+}
+a:visited
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #1478AC;
+}
+a:active
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #0000FF;
+}
+a:hover
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #FF0000;
+}
+.button-cam
+{
+	background-image:url(../Images/button-cam.gif);
+	border:none;
+	background-color:Transparent;
+	font-weight: bold;
+	font-family:Tahoma;
+	font-size:11.5pt;
+	color:#FFFFFF;
+	width:96;
+	height:30;
+}
+.button-xanh
+{
+	background-image:url(../Images/button-xanh.gif);
+	border:none;
+	background-color:Transparent;
+	font-weight: bold;
+	font-family:Tahoma;
+	font-size:11.5pt;
+	color:#FFFFFF;
+	width:96;
+	height:30;
+}

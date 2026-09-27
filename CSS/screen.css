@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+  /**************************/
+ /*        CSS reset       */
+/**************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}
+ol, ul {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none}
+:focus {outline:0}
+ins {text-decoration:none}
+del {text-decoration:line-through}
+table {border-collapse: separate;border-spacing: 0}
+caption, th, td {text-align: left; font-weight: normal}
+
+/******* Default rules tags *******/
+body {font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333; background:#d8d8d8 url(../images/bgd_body.png) top center repeat-y;}
+h1 {font-size:1.4em}
+h2 {font-size:20px; font-weight:normal;}
+h3 {font-size:1.1em}
+h4 {font-size:1.4em}
+h5 {font-size:1em}
+a{text-decoration:underline; color:#006600;}
+a:hover{text-decoration:none;}
+input, select, textarea {font-size:1.0em; border:1px solid #ccc; font-family:Arial, Helvetica, sans-serif}
+p {line-height:17px}
+/*0. ///////Structure all templates///////*/
+
+	.header {background:url(../images/bg_header.jpg) top center no-repeat; height:220px;}
+		.innerHeader {width:975px; margin:auto; height:220px; overflow:hidden;}
+		.logo {padding-top:30px; height:100px; overflow:hidden; float:left;}
+		.nav {padding:4px 0 0 0; float:left;}
+			.nav li {float:left; padding:0 0 0 2px; height:46px; overflow:hidden; background:url(../images/ui-title.png) 0 -110px no-repeat;}
+			.nav li.first {background:none;}
+
+		.uiNav {height:46px; background:url(../images/ui-title.png) 0 0 no-repeat}
+			.initNav-1 {background-position:0 0; width:122px}  		a:hover .initNav-1, a.current .initNav-1 {background-position:0 -60px}
+			.initNav-2 {background-position:-122px 0; width:139px}	a:hover .initNav-2, a.current .initNav-2 {background-position:-122px -60px}
+			.initNav-3 {background-position:-261px 0; width:127px}	a:hover .initNav-3, a.current .initNav-3 {background-position:-261px -60px}
+			.initNav-4 {background-position:-388px 0; width:207px}	a:hover .initNav-4, a.current .initNav-4 {background-position:-388px -60px}
+			.initNav-5 {background-position:-595px 0; width:107px}	a:hover .initNav-5, a.current .initNav-5 {background-position:-595px -60px}
+			.initNav-6 {background-position:-702px 0; width:183px}	a:hover .initNav-6, a.current .initNav-6 {background-position:-702px -60px}
+			
+		.datsan {padding-top:10px; text-align:right;}
+			.datsan .img {width:100px; height:80px; background:url(../images/ui-icon.png) 0 -210px no-repeat;}
+			.datsan .img:hover {width:100px; height:80px; background:url(../images/ui-icon.png) 0 -295px no-repeat;}
+			
+		.slogan {color:#fff; text-align:right; font-family:"Myriad Pro", Arial, Helvetica, sans-serif; font-size:28px; height:40px;}
+		.hotline {color:#c8fa2a; text-align:right; font-size:24px; font-weight:bold; font-family:"Myriad Pro", Impact, Tahoma, Arial, Helvetica, sans-serif; height:35px;}
+		
+
+	.content {background:url(../images/bgd_main.png) top center no-repeat;}
+		.innerContent {width:975px; overflow:hidden; margin:auto;}
+		
+		.blockBanner {padding:5px; width:965px; overflow:hidden;}
+			.banner {float:left; width:650px; height:305px;}
+			
+			.ser {float:left; background:url(../images/bgd_serHome.png) 0 0 no-repeat; padding:25px 20px 25px 20px; width:275px; height:255px;}
+				.ser h2 {color:#fff; font-size:20px; font-family:Arial, Helvetica, sans-serif; font-weight:normal;}			
+				.ser ul {padding-top:20px; margin-left:3px;}
+					.ser ul li {display:block; padding:0 0 16px 10px; background:url(../images/ui-icon.png) 0 5px no-repeat;}
+					.ser a {color:#61c51f; text-decoration:underline; text-transform:uppercase;}
+					.ser a:hover {text-decoration:none;}
+					
+					
+		.blockType01 {width:605px; background:url(../images/bgd_block.jpg) 0 0 no-repeat; padding:30px 0px 25px 20px; margin-left:5px; float:left;}
+		.blockType01 h2, .blockType02 h2 {color:#cc3300; font-size:20px; font-family:Arial, Helvetica, sans-serif; text-transform:uppercase; padding-bottom:10px;}
+			.introHome .inner {border-right:1px solid #959595; padding-right:25px; width:580px;}
+			.blockType01 p {padding-top:10px;}
+			
+			.contactHome {border-right:1px solid #959595; padding-right:25px; padding-top:30px; width:580px; overflow:hidden;}
+				.contactHome .block {float:left; width:260px; padding-right:40px;}
+				.contactHome .last {padding-right:0px;}
+				
+		.blockType02 {width:295px; padding:30px 0px 20px 20px; float:left;}
+			.blockType02 .img {border:1px solid #858585; display:block;}
+			
+			ul.listsp {padding-top:10px;}
+			ul.listsp li {display:block; padding:0 0 10px 10px; background:url(../images/ui-icon.png) 0 -85px no-repeat;}
+			
+	.footer {background:url(../images/bgd_footer.png) 1px 0 no-repeat; width:976px; height:71px; margin:auto;}
+		.innerFooter {padding:15px; color: #cccccc; font-size:11px;}
+			.innerFooter ul {padding-top:5px;}
+			.innerFooter ul li {display:inline; background:url(../images/ui-icon.png) 0 -148px no-repeat; padding:0 7px;}
+			.innerFooter ul li.first {background:none; padding-left:0px;}
+			.innerFooter a {color:#ccc;}
